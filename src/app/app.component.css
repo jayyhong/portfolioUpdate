@@ -1,0 +1,66 @@
+.container {
+  background-color: white;
+  position: absolute;
+  margin-top: 350px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.headerBox {
+  margin-top: -150px;
+  margin-left: 10px;
+  height: 135px;
+  background-color: rgba(0,0,0, 0.7);
+  width: 60vw;
+  position: absolute;
+}
+
+.headerText {
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -50px;
+}
+
+.headerParagraph {
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 30px;
+}
+
+.video-container {
+  position: fixed;
+  max-height: 400px;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video {
+  width: 100vw;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 400px;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 770px) {
+  .headerText{
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .headerParagraph {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 0;
+  }
+}
