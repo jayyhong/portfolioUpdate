@@ -3,7 +3,6 @@
   position: absolute;
   margin-top: 450px;
   width: 100vw;
-  height: 100%;
 }
 
 
@@ -30,8 +29,8 @@
 }
 
 .headerBox {
-  margin-top: -150px;
-  height: 150px;
+  margin-top: -125px;
+  height: 125px;
   background-color: rgba(0,0,0, 0.7);
   width: 100vw;
   position: absolute;
@@ -41,16 +40,41 @@
   color: white;
   font-weight: bold;
   font-size: 60px;
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.github {
+  background-image: url("https://joshuapenalba.files.wordpress.com/2014/12/github-icon.png?w=1200");
+  background-size: cover;
+  background-color: transparent;
+  position: absolute;
+  right: 120px;
+  height: 100px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.youtube {
+  background-image: url("http://moziru.com/images/youtube-clipart-png-black-12.png");
+  background-size: cover;
+  background-color: transparent;
+  position: absolute;
+  margin-top: 25px;
+  right: 30px;
+  height: 50px;
+  width: 70px;
+  border: none;
+  cursor: pointer;
 }
 
 .headerParagraph {
   color: lightgrey;
   font-weight: lighter;
   font-size: 20px;
-  text-align: center;
   margin-top: -10px;
+  margin-left: 20px;
 }
 
 .projectDescription {
