@@ -6,5 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  fixed: any;
+  offSetY: any;
+  video: any;
+
+  constructor() {
+    this.scrollOffSet();
+  }
+
+  ngOnInit() {
+    this.fixed = document.getElementsByClassName('headerBox');
+    this.video = document.getElementsByClassName('video');
+  }
+
+  scrollOffSet(){
+    window.addEventListener('scroll', (event) => {
+      console.log(Math.floor(window.pageYOffset))
+      console.log(this.fixed)
+      if (Math.floor(window.pageYOffset) > 300) {
+        this.fixed[0].style.position = "fixed";
+        this.fixed[0].style.top= "25%";
+        this.fixed[0].style.backgroundColor = "rgba(0,0,0, 1)"
+        this.video[0].style.display= "none";
+      } else {
+        this.fixed[0].style.position = "absolute";
+        this.fixed[0].style.top="0";
+        this.fixed[0].style.backgroundColor = "rgba(0,0,0, 0.7)"
+        this.video[0].style.display= "block";
+      }
+    })
+  }
+
 }

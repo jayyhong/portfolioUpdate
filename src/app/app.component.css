@@ -1,17 +1,39 @@
 .container {
   background-color: white;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 450px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+}
+
+
+.video-container {
+  position: fixed;
+  min-height: 450px;
+  max-height: 450px;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video {
+  width: 100vw;
+  min-width: 960px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 450px;
+  opacity: 0.3;
 }
 
 .headerBox {
   margin-top: -150px;
-  margin-left: 10px;
-  height: 135px;
+  height: 150px;
   background-color: rgba(0,0,0, 0.7);
-  width: 60vw;
+  width: 100vw;
   position: absolute;
 }
 
@@ -20,38 +42,21 @@
   font-weight: bold;
   font-size: 60px;
   text-align: center;
-  margin-top: 20px;
-  margin-left: -50px;
+  margin-top: 30px;
 }
 
 .headerParagraph {
-  color: white;
+  color: lightgrey;
   font-weight: lighter;
   font-size: 20px;
   text-align: center;
   margin-top: -10px;
-  margin-left: 30px;
 }
 
-.video-container {
-  position: fixed;
-  max-height: 400px;
-  width: 100vw;
-  overflow: hidden;
-  z-index: -1;
+.projectDescription {
+  font-size: 30px;
 }
 
-.video {
-  width: 100vw;
-}
-
-.overlay {
-  position: absolute;
-  background-color: black;
-  width: 100vw;
-  height: 400px;
-  opacity: 0.4;
-}
 
 @media only screen and (max-width: 770px) {
   .headerText{
