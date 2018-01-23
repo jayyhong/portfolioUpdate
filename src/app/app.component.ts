@@ -20,11 +20,15 @@ export class AppComponent {
     this.video = document.getElementsByClassName('video');
   }
 
+  moveScreen(){
+    window.scrollTo(0, 325);
+  }
+
   scrollOffSet(){
     window.addEventListener('scroll', (event) => {
       if (Math.floor(window.pageYOffset) > 325) {
         this.fixed[0].style.position = "fixed";
-        this.fixed[0].style.top= "16%";
+        this.fixed[0].style.top= "125px";
         this.fixed[0].style.backgroundColor = "rgba(0,0,0, 1)"
         this.video[0].style.display= "none";
       } else {
