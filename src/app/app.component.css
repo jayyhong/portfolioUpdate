@@ -1,7 +1,21 @@
-.container {
+.navbar {
+  width: 100vw;
+  height: 40px;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+}
+
+.ghostwriters_container {
   background-color: white;
   position: absolute;
   margin-top: 450px;
+  width: 100vw;
+}
+
+.triplit_container {
+  background-color: white;
+  margin-top: 100px;
   width: 100vw;
 }
 
@@ -29,11 +43,28 @@
 }
 
 .headerBox {
-  margin-top: -125px;
   height: 125px;
-  background-color: rgba(0,0,0, 0.7);
   width: 100vw;
   position: absolute;
+}
+
+.header_background {
+  min-height: 450px;
+  max-height: 450px;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("https://s3-us-west-1.amazonaws.com/portfolio-images-jayh/triplit_3.png");
+  background-size: cover;
+}
+
+.ghostwriters {
+  margin-top: -125px;
+  background-color: rgba(0,0,0, 0.7);
+}
+
+.triplit {
+  position: relative;
+  background-color: rgba(0,0,0, 0.7);
 }
 
 .headerText {
@@ -79,22 +110,52 @@
 
 .projectDescription {
   font-size: 30px;
-  width: 700px;
+  width: 90vw;
   font-weight: lighter;
   font-size: 30px;
   margin-top: 30px;
   margin-left: 45px;
 }
 
+.img_wrapper {
+  width: 100vw;
+  overflow: hidden;
+}
+
 
 @media only screen and (max-width: 770px) {
+  .ghostwriters {
+    position: absolute !important;
+    top: 0 !important; 
+    background-color: rgba(0,0,0, 0.7) !important;
+  }
+  .triplit {
+    position: static !important; 
+    background-color: rgba(0,0,0, 0.7) !important;
+  }
+  .github {
+    height: 60px;
+    width: 60px;
+    right: 10px;
+    margin-top: -20px;
+  }
+  .youtube {
+    height: 30px;
+    width: 45px;
+    right: 18px;
+    top: 50px;
+  }
+  .header_background {
+    margin-top: 0px !important;
+  }
   .headerText{
     font-size: 40px;
-    margin-left: 0;
+    margin-left: 10px;
+    margin-top: 25px;
   }
   .headerParagraph {
     font-size: 15px;
-    margin-top: 2px;
-    margin-left: 0;
+    margin-top: -2px;
+    margin-left: 30px;
   }
 }
